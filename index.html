@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Feedback Form From endPointS Company to the employees">
+        <meta name="description"
+            content="Feedback Form From endPointS Company to the employees">
         <title>endPointS Form</title>
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,62 +22,50 @@
     </head>
     <body>
 
-        <header class="d-flex align-content-center">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent w-100">
-                <div class="container-fluid d-flex justify-content-between">
-                    <a class="navbar-brand" href="#"><img
-                            src="/assets/images/logoprincip.png" alt="logo1"
-                            class="w-25 h-auto img-fluid"></a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="offcanvas offcanvas-end d-flex justify-content-end"
-                        tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-body mr-5">
-                            <ul
-                                class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle active"
-                                        href="#"
-                                        role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false"> </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item"
-                                                href="#"></a></li>
-                                        <li><a class="dropdown-item"
-                                                href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="#">Something else
-                                                here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-transparent w-100 h-50 d-flex justify-content-around">
+            <div class="forLogo d-flex justify-content-center">
+                <a class="navbar-brand" href="#"><img
+                        src="/assets/images/DataCollect_Inc.png" alt="logo1"
+                        class="w-25"></a>
+            </div>
+            <div class="d-flex justify-content-center mr-100">
+                <ul
+                    class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active"
+                            href="#"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"> </a>
+                        <ul class="dropdown-menu bg-">
+                            <li><a class="dropdown-item"
+                                    href="#">login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="#">Company</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <button id="Toggle" class="btn btn-outline-light">Light Mode</button>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+
+        </nav>
 
         <section class="container">
             <div class="card bg-dark bg-opacity-50 w-50 h-100 mx-auto ">
                 <div class="card-body rounded">
-
-                    <form id="FormSections" onsubmit="submitForm(event)">
+                    <form id="FormSections">
 
                         <div class="section" id="section0">
                             <div class="form-group ">
@@ -84,11 +73,12 @@
                                     class="text-center text-light fw-bold fs-1 w-100 mt-4">Welcome!</label>
                                 <p
                                     class="text-center text-light fw-bold fs-5 mt-4">Please
-                                    fill out the information <br>in each form by
-                                    <br>clicking "Next"</p>
+                                    fill out the information in <br>each form by
+                                    clicking "Next"</p>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-dark mt-3 mb-4"
+                                <button type="button"
+                                    class="btn btn-dark mt-3 mb-4"
                                     onclick="nextSection(1)">Start</button>
                             </div>
                         </div>
@@ -101,11 +91,12 @@
                                 <label for="name"
                                     class="text-light fw-bold">First
                                     Name:</label>
-                                <input name="name" type="text" required id="name"
+                                <input name="name" type="text" id="name"
                                     class="form-control bg-black bg-opacity-50 border-3 text-light">
                             </div>
                             <div class="form-group">
-                                <label for="name2" class="text-light fw-bold">Last
+                                <label for="name2"
+                                    class="text-light fw-bold">Last
                                     Name:</label>
                                 <input name="name2" type="text" id="name2"
                                     class="form-control bg-black bg-opacity-50 border-3 text-light">
@@ -139,14 +130,14 @@
                                 <label for="phone"
                                     class="text-light fw-bold">Email
                                     Confirmation:</label>
-                                <input name="phone" type="tel" id="phone"
+                                <input name="phone" type="tel" id="email"
                                     class="form-control bg-black bg-opacity-50 border-3 text-light">
                             </div>
                             <div class="form-group">
                                 <label for="age"
                                     class="text-light fw-bold">Phone
                                     Number:</label>
-                                <input name="number" type="number" id="age"
+                                <input name="number" type="number" id="phone"
                                     class="form-control bg-black bg-opacity-50 border-3 text-light">
                             </div>
                             <div class="d-flex justify-content-around">
@@ -169,11 +160,45 @@
                                 <button type="button" class="btn btn-dark"
                                     onclick="prevSection(2)">Previous</button>
                                 <button type="button" class="btn btn-dark"
-                                    onclick="nextSection(4)">Done</button>
+                                    onclick="nextSection(4)">Next</button>
                             </div>
                         </div>
 
-                        <div class="section" id="section4">
+                        <div class="section d-none" id="section4">
+                            <h2 class="card-title text-center text-light fw-bold">Review Your Information</h2>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">First Name:</label>
+                                <output id="reviewName" class="text-light"></output>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">Last Name:</label>
+                                <output id="reviewLastName" class="text-light"></output>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">Age:</label>
+                                <output id="reviewAge" class="text-light"></output>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">Email:</label>
+                                <output id="reviewEmail" class="text-light"></output>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">Phone Number:</label>
+                                <output id="reviewPhone" class="text-light"></output>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-light fw-bold">Feedback:</label>
+                                <output id="reviewFeedback" class="text-light"></output>
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <button type="button" class="btn btn-dark"
+                                    onclick="prevSection(3)">Edit</button>
+                                <button type="button" class="btn btn-dark"
+                                    onclick="nextSection(5)">Next</button>
+                            </div>
+                        </div>
+                        
+                        <div class="section" id="section5">
                             <div class="form-group ">
                                 <label for="welcomeMessage"
                                     class="text-center text-light fw-bold fs-1 w-100 mt-4">Are
@@ -184,9 +209,17 @@
                             </div>
                             <div class="d-flex justify-content-center">
                                 <button type="submit"
-                                    class="text-center text-light fw-bold mt-3 mb-4">Submit</button>
+                                    class="text-center text-light fw-bold mt-3 mb-4"
+                                    onclick="nextSection(6)">Submit</button>
                             </div>
                         </div>
+
+                        <div class="section" id="section6">
+                            <h3
+                                class="text-center text-light fw-bold mt-5 mb-5">Submite
+                                Succesful</h3>
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -202,10 +235,18 @@
                             bridge the gap between technology<br>
                             and user experience.</p>
                     </div>
-                    <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center gap-2"> <!-- Social Icons Column -->
-                        <a href="https://github.com/FrJ-root"><img src="/assets/images/x.png" alt="X" width="30" height="30"></a>
-                        <a href="https://www.facebook.com/people/F%C3%A0r%C3%A2j-%C3%98f-%C4%81ll%C4%81h/pfbid02facukVRHTYTni7bvFS7PGtGT5sitQxcxPPjz6P9tjsWEUm31nV4Z29FAXXuBhNWCl/"><img src="/assets/images/fb.png" alt="fb" width="30" height="30"></a>
-                        <a href="https://github.com/FrJ-root"><img src="/assets/images/email.png" alt="email" width="30" height="30"></a>
+                    <div
+                        class="col-md-4 mb-4 d-flex justify-content-center align-items-center gap-2">
+                        <a href="https://github.com/FrJ-root"><img
+                                src="/assets/images/x.png" alt="X" width="30"
+                                height="30"></a>
+                        <a
+                            href="https://www.facebook.com/people/F%C3%A0r%C3%A2j-%C3%98f-%C4%81ll%C4%81h/pfbid02facukVRHTYTni7bvFS7PGtGT5sitQxcxPPjz6P9tjsWEUm31nV4Z29FAXXuBhNWCl/"><img
+                                src="/assets/images/fb.png" alt="fb" width="30"
+                                height="30"></a>
+                        <a href="https://github.com/FrJ-root"><img
+                                src="/assets/images/email.png" alt="email"
+                                width="30" height="30"></a>
                     </div>
                     <div class="col-md-4 mb-4">
                         <h3 class="fw-bold">Contact Us</h3>
@@ -217,10 +258,13 @@
                 </div>
                 <div class="row">
                     <div class="col text-center">
-                        <small class="d-block text-muted">© 2024 endPointS. All rights reserved.</small>
+                        <small class="d-block text-muted">© 2024 endPointS. All
+                            rights reserved.</small>
                         <small>
-                            <a href="/privacy-policy" class="text-muted mx-2">Privacy Policy</a> | 
-                            <a href="/terms-of-service" class="text-muted mx-2">Terms of Service</a>
+                            <a href="/privacy-policy"
+                                class="text-muted mx-2">Privacy Policy</a> |
+                            <a href="/terms-of-service"
+                                class="text-muted mx-2">Terms of Service</a>
                         </small>
                     </div>
                 </div>
