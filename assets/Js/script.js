@@ -1,9 +1,7 @@
-function validateSection(FormSections){
+function validateSection(){
 
-    const nameData = document.getElementById("name").value;
-        if(nameData === ''){
-            alert("enter")
-        }
+    
+       
 }
 
 
